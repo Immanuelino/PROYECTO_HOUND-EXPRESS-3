@@ -1,0 +1,13 @@
+.lista {
+    padding: 20px;
+    background-color: #ffffff;
+
+    &__title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+}

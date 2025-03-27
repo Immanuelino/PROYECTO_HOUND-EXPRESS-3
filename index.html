@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hound Express</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Hound Express</h1>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Guías</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registro">
+        <h2 class="registro__title">Registrar Nueva Guía</h2>
+        <form class="registro__form" id="guideForm">
+            <label for="guideNumber">Número de Guía:</label>
+            <input type="text" id="guideNumber" required>
+            <label for="origin">Origen:</label>
+            <input type="text" id="origin" required>
+
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" required>
+
+            <label for="recipient">Destinatario:</label>
+            <input type="text" id="recipient" required>
+
+            <label for="status">Estado Inicial:</label>
+            <select id="status" required>
+                <option value="Pendiente">Pendiente</option>
+                <option value="En tránsito">En tránsito</option>
+                <option value="Entregado">Entregado</option>
+            </select>
+
+            <label for="date">Fecha de Creación:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <section class="estado">
+        <h2 class="estado__title">Estado General</h2>
+        <div>Total Guías Activas: <span id="activeCount">0</span></div>
+        <div>Guías en Tránsito: <span id="inTransitCount">0</span></div>
+        <div>Guías Entregadas: <span id="deliveredCount">0</span></div>
+    </section>
+
+    <section class="lista">
+        <h2 class="lista__title">Lista de Guías</h2>
+        <ul id="guideList"></ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hound Express</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
